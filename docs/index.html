@@ -13,7 +13,7 @@
   document.querySelector("#duck2").innerHTML="🦆"
   
   document.addEventListener('keydown', (event) => {
-    if (event.key === "ArrowUp"){
+    if (event.key === "a"){
       if (duckplace === 2){
         document.querySelector("#duck2").innerHTML=""
         document.querySelector("#duck1").innerHTML="🦆"
@@ -23,7 +23,7 @@
         document.querySelector("#duck2").innerHTML="🦆"
         duckplace = 2
       }
-    } else if (event.key === "ArrowDown"){
+    } else if (event.key === "b"){
       if (duckplace === 1){
         document.querySelector("#duck1").innerHTML=""
         document.querySelector("#duck2").innerHTML="🦆"
