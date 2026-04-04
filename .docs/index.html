@@ -1,0 +1,22 @@
+<h1><duck1> </duck1></h1>
+<h1><duck2> </duck2></h1>
+<h1><duck3> </duck3></h1>
+<script>
+ var duckplace = 2
+   document.querySelector("duck2").innerHTML="🦆"
+  document.addEventListener('keydown', (event) => {
+    if ( event.key === ArrowUp && duckplace === 2){
+      document.querySelector("duck2").innerHTML=" "
+      document.querySelector("duck1").innerHTML="🦆"
+    } else if ( event.key === ArrowUp && duckplace === 3){
+      document.querySelector("duck3").innerHTML=" "
+      document.querySelector("duck2").innerHTML="🦆"
+    } else if ( event.key === ArrowDown && duckplace === 2){
+      document.querySelector("duck2").innerHTML=" "
+      document.querySelector("duck3").innerHTML="🦆"
+    } else if ( event.key === ArrowDown && duckplace === 1){
+      document.querySelector("duck1").innerHTML=" "
+      document.querySelector("duck2").innerHTML="🦆"
+    };
+  };
+</script>
