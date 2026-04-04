@@ -10,9 +10,9 @@
 <h1 id="duck2"></h1>
 <h1 id="duck3"></h1>
 <script>
+  document.body.focus();
   var duckplace = 2;
   document.querySelector("#duck2").innerHTML="🦆"
-  
   document.addEventListener('keydown', (event) => {
     if (event.key === "ArrowUp"){
       if (duckplace === 2){
