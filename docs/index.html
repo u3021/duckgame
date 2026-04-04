@@ -4,14 +4,14 @@
   <meta charset="UTF-8">
   <title>duck :O</title>
 </head>
-<body tabindex="0">
+<body>
 <h1 id="duck1"></h1>
 <h1 id="duck2"></h1>
 <h1 id="duck3"></h1>
 <script>
   var duckplace = 2;
   document.querySelector("#duck2").innerHTML="🦆"
-  document.body.focus();
+  
   document.addEventListener('keydown', (event) => {
     if (event.key === "ArrowUp"){
       if (duckplace === 2){
