@@ -12,22 +12,26 @@
   var duckplace = 2;
   document.querySelector("#duck2").innerHTML="🦆"
   document.addEventListener('keydown', (event) => {
-    if (event.key === "ArrowUp" && duckplace === 2){
-      document.querySelector("#duck2").innerHTML=" "
-      document.querySelector("#duck1").innerHTML="🦆"
-      duckplace = 1
-    } else if ( event.key === "ArrowUp" && duckplace === 3){
-      document.querySelector("#duck3").innerHTML=" "
-      document.querySelector("#duck2").innerHTML="🦆"
-      duckplace = 2
-    } else if ( event.key === "ArrowDown" && duckplace === 2){
-      document.querySelector("#duck2").innerHTML=" "
-      document.querySelector("#duck3").innerHTML="🦆"
-      duckplace = 3
-    } else if ( event.key === "ArrowDown" && duckplace === 1){
-      document.querySelector("#duck1").innerHTML=" "
-      document.querySelector("#duck2").innerHTML="🦆"
-      duckplace = 2
+    if (event.key === "ArrowUp"){
+      if (duckplace === 2){
+        document.querySelector("#duck2").innerHTML=" "
+        document.querySelector("#duck1").innerHTML="🦆"
+        duckplace = 1
+      } else if (duckplace === 3){
+        document.querySelector("#duck3").innerHTML=" "
+        document.querySelector("#duck2").innerHTML="🦆"
+        duckplace = 2
+      }
+    } else if (event.key === "ArrowDown"){
+      if (duckplace === 1){
+        document.querySelector("#duck1").innerHTML=" "
+        document.querySelector("#duck2").innerHTML="🦆"
+        duckplace = 2
+      } else if (duckplace === 2){
+        document.querySelector("#duck2").innerHTML=" "
+        document.querySelector("#duck3").innerHTML="🦆"
+        duckplace = 3
+      }
     }
   });
 </script>
