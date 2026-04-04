@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,7 +14,7 @@
   document.querySelector("#duck2").innerHTML="🦆"
   
   document.addEventListener('keydown', (event) => {
-    if (event.key === "a"){
+    if (event.key === "ArrowUp"){
       if (duckplace === 2){
         document.querySelector("#duck2").innerHTML=""
         document.querySelector("#duck1").innerHTML="🦆"
@@ -23,7 +24,7 @@
         document.querySelector("#duck2").innerHTML="🦆"
         duckplace = 2
       }
-    } else if (event.key === "b"){
+    } else if (event.key === "ArrowDown"){
       if (duckplace === 1){
         document.querySelector("#duck1").innerHTML=""
         document.querySelector("#duck2").innerHTML="🦆"
