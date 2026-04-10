@@ -8,11 +8,15 @@
 <h1 id="duck1"></h1>
 <h1 id="duck2"></h1>
 <h1 id="duck3"></h1>
+<h1 id="duck4"></h1>
+<h1 id="duck5"></h1>
 <script>
-  var duckplace = 2;
-  document.querySelector("#duck2").innerHTML="🦆"
+  var duckplace = 3;
+  document.querySelector("#duck3").innerHTML="🦆"
     document.querySelector("#duck1").innerHTML="⬜"
-    document.querySelector("#duck3").innerHTML="⬜"
+    document.querySelector("#duck2").innerHTML="⬜"
+   document.querySelector("#duck4").innerHTML="⬜"
+    document.querySelector("#duck5").innerHTML="⬜"
   document.addEventListener('keydown', (event) => {
     if (event.key === "ArrowUp"){
       if (duckplace === 2){
@@ -23,8 +27,15 @@
         document.querySelector("#duck3").innerHTML="⬜"
         document.querySelector("#duck2").innerHTML="🦆"
         duckplace = 2
-      }
-    } else if (event.key === "ArrowDown"){
+      } else if (duckplace === 4){
+        document.querySelector("#duck4").innerHTML="⬜"
+        document.querySelector("#duck3").innerHTML="🦆"
+        duckplace = 3
+      } else if (duckplace === 5){
+        document.querySelector("#duck5").innerHTML="⬜"
+        document.querySelector("#duck4").innerHTML="🦆"
+        duckplace = 4
+      } else if (event.key === "ArrowDown"){
       if (duckplace === 1){
         document.querySelector("#duck1").innerHTML="⬜"
         document.querySelector("#duck2").innerHTML="🦆"
@@ -33,7 +44,14 @@
         document.querySelector("#duck2").innerHTML="⬜"
         document.querySelector("#duck3").innerHTML="🦆"
         duckplace = 3
-      }
+      } else if (duckplace === 3){
+        document.querySelector("#duck3").innerHTML="⬜"
+        document.querySelector("#duck4").innerHTML="🦆"
+        duckplace = 4
+      } else if (duckplace === 4){
+        document.querySelector("#duck4").innerHTML="⬜"
+        document.querySelector("#duck5").innerHTML="🦆"
+        duckplace = 5
     }
   });
 </script>
