@@ -151,6 +151,38 @@
         document.querySelector("#duck4").innerHTML="⬜⬜⬜⬜⬜"
         document.querySelector("#duck5").innerHTML="🦆⬜⬜⬜⬜"
         duckplacey = 5
+      }  else if (duckplacey === 1 && duckplacex === 5){
+        document.querySelector("#duck1").innerHTML="⬜⬜⬜⬜⬜"
+        document.querySelector("#duck2").innerHTML="⬜⬜⬜⬜🦆"
+        duckplacey = 2
+      } else if (duckplacey === 2 && duckplacex === 5){
+        document.querySelector("#duck2").innerHTML="⬜⬜⬜⬜⬜"
+        document.querySelector("#duck3").innerHTML="⬜⬜⬜⬜🦆"
+        duckplacey = 3
+      } else if (duckplacey === 3 && duckplacex === 5){
+        document.querySelector("#duck3").innerHTML="⬜⬜⬜⬜⬜"
+        document.querySelector("#duck4").innerHTML="⬜⬜⬜⬜🦆"
+        duckplacey = 4
+      } else if (duckplacey === 4 && duckplacex === 5){
+        document.querySelector("#duck4").innerHTML="⬜⬜⬜⬜⬜"
+        document.querySelector("#duck5").innerHTML="⬜⬜⬜⬜🦆"
+        duckplacey = 5
+      }  else if (duckplacey === 1 && duckplacex === 4){
+        document.querySelector("#duck1").innerHTML="⬜⬜⬜⬜⬜"
+        document.querySelector("#duck2").innerHTML="⬜⬜⬜🦆⬜"
+        duckplacey = 2
+      } else if (duckplacey === 2 && duckplacex === 4){
+        document.querySelector("#duck2").innerHTML="⬜⬜⬜⬜⬜"
+        document.querySelector("#duck3").innerHTML="⬜⬜⬜🦆⬜"
+        duckplacey = 3
+      } else if (duckplacey === 3 && duckplacex === 4){
+        document.querySelector("#duck3").innerHTML="⬜⬜⬜⬜⬜"
+        document.querySelector("#duck4").innerHTML="⬜⬜⬜🦆⬜"
+        duckplacey = 4
+      } else if (duckplacey === 4 && duckplacex === 4){
+        document.querySelector("#duck4").innerHTML="⬜⬜⬜⬜⬜"
+        document.querySelector("#duck5").innerHTML="⬜⬜⬜🦆⬜"
+        duckplacey = 5
       }
   }
     if (event.key === "ArrowLeft"){
