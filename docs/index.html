@@ -12,8 +12,8 @@
 <h1 id="duck5"></h1>
 <script>
   var duckplacex = 3;
-  var duckplacey = #duck3;
-  document.querySelector(duckplacey).innerHTML="⬜⬜🦆⬜⬜"
+  var duckplacey = #3;
+  document.querySelector("#duck3").innerHTML="⬜⬜🦆⬜⬜"
     document.querySelector("#duck1").innerHTML="⬜⬜⬜⬜⬜"
     document.querySelector("#duck2").innerHTML="⬜⬜⬜⬜⬜"
    document.querySelector("#duck4").innerHTML="⬜⬜⬜⬜⬜"
@@ -36,7 +36,24 @@
         document.querySelector("#duck5").innerHTML="⬜⬜⬜⬜⬜"
         document.querySelector("#duck4").innerHTML="⬜⬜🦆⬜⬜"
         duckplacey = 4
+      } else if (duckplacey === 2 && duckplacex === 1){
+        document.querySelector("#duck2").innerHTML="⬜⬜⬜⬜⬜"
+        document.querySelector("#duck1").innerHTML="🦆⬜⬜⬜⬜"
+        duckplacey = 1
+      } else if (duckplacey === 3 && duckplacex === 1){
+        document.querySelector("#duck3").innerHTML="⬜⬜⬜⬜⬜"
+        document.querySelector("#duck2").innerHTML="🦆⬜⬜⬜⬜"
+        duckplacey = 2
+      } else if (duckplacey === 4 && duckplacex === 1){
+        document.querySelector("#duck4").innerHTML="⬜⬜⬜⬜⬜"
+        document.querySelector("#duck3").innerHTML="🦆⬜⬜⬜⬜"
+        duckplacey = 3
+      } else if (duckplacey === 5 && duckplacex === 1){
+        document.querySelector("#duck5").innerHTML="⬜⬜⬜⬜⬜"
+        document.querySelector("#duck4").innerHTML="🦆⬜⬜⬜⬜"
+        duckplacey = 4
       }
+
     }
     if (event.key === "ArrowDown"){
       if (duckplacey === 1 && duckplacex === 3){
@@ -57,6 +74,9 @@
         duckplacey = 5
     }
   }
+    if (event.key === "ArrowLeft"){
+      duckplacex = 1
+    }
 });
 </script>
 </body>
